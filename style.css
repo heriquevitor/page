@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+  background-color: rgb(11, 88, 99);
+  font-family: 'Poppins', sans-serif;
+}
+
+img{
+  height: 320px;
+  width: 320px;
+}
+
+h1{
+  color: rgb(5, 2, 2);
+  margin-top: 31px;
+  margin-bottom: 8px;
+}
+
+P{
+  color: rgb(5, 2, 2);
+  font-size: 18px;
+}
+
+UL{
+  margin-top: 35px;
+
+}
+
+li{
+  margin-bottom: 18px;
+  list-style: none;
+}
+
+a{
+  
+  color: rgb(1, 2, 1);
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  border-radius: 170px;
+  background: var(--clr);
+  transition: 0.5s;
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 20px var(--clr);
+  font-size: 25px;
+  
+
+}
+
+footer{
+  color: rgb(5, 2, 2);
+  padding: 15px;
+  font-size: 25px;
+  margin: 0 0 0 0;
+
+}
+.container{
+  width: 420px;
+  text-align: center;
+  background-color: rgba(233, 205, 173, 0.473);
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  font-size: 20px;
+}
+.rain {
+  height: 100%;
+  background: url(https://i.postimg.cc/MKgprHJg/rain.png);
+  animation: rain 0.2s linear infinite;
+}
+
+@keyframes rain {
+  0% {background-position: 0px 0px;}
+  100% {background-position: 320px 320px;}
+}
