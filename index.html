@@ -9,33 +9,79 @@
   <title>Herique Oliveira</title>
 </head>
 <body>
+  <div class="tudo">
   <div class="rain">
   <div class="container">
- <img src="/img/Perfil.png" alt="Imagem de um rosto de um homem branco com cabelos curtos e pretos sorrindo">
+ <img src="img/Perfil.png" alt="Imagem de um rosto de um homem branco com cabelos curtos e pretos sorrindo">
  <h1>Hérique Oliveira</h1>
  <p>Desenvolvedor Full Stack</p>
  <ul>
   <li>
-    <a href="https://www.linkedin.com/in/heriqueoliveira/" alt="Link de acesso ao Perfil do linkedin" target="_blank" style="--clr:#f90">Linkedin</a>
+    <a href="https://www.linkedin.com/in/heriqueoliveira/" alt="Link de acesso ao Perfil do linkedin" target="_blank" style="--clr:#fff">Linkedin</a>
   </li>
   <li>
-    <a class="btn" href="https://github.com/heriquevitor"alt="Link de acesso ao Perfil do github"target="_blank" style="--clr:#f90">Github</a>
+    <a href="https://github.com/heriquevitor"alt="Link de acesso ao Perfil do github"target="_blank" style="--clr:#fff">Github</a>
   </li>
   <li>
-    <a href="https://www.instagram.com/herique.oliveira/"alt="Link de acesso ao Perfil do instagram"target="_blank"style="--clr:#f90">Instagram</a>
+    <a href="https://www.instagram.com/herique.oliveira/"alt="Link de acesso ao Perfil do instagram"target="_blank"style="--clr:#fff">Instagram</a>
   </li>
   <li>
-    <a href="mailto:heriquevitor3@gmail.com" alt="Link de e-mail"style="--clr:#f90">E-mail</a>
+    <a href="mailto:heriquevitor3@gmail.com" alt="Link de e-mail"style="--clr:#fff">E-mail</a>
   </li>
   <li>
-    <a href="/public/Currículo (1).pdf" alt="Arquivo com Currículo"target="_blank"style="--clr:#f90">Currículo</a>
+    <a href="/public/Currículo (1).pdf" alt="Arquivo com Currículo"target="_blank"style="--clr:#fff">Currículo</a>
   </li>
  </ul>
+ <div id="time">
+  <div class="circle">
+    <div id="hours">00</div>
+  </div>
+  <div class="circle">
+    
+    <div id="minutes">00</div>
+  </div>
+  <div class="circle">
+    <div id="seconds">00</div>
+  </div>
+  <div class="ap">
+    <div id="ampm">AM</div>
+  </div>
+ </div>
  <footer>
-  Volte sempre!😏<br> Feito com Carinho por <br>Hérique Oliveira
-  <img src="/img/florest.gif">
+  Volte sempre!😏<br> Feito com Carinho por <br>Hérique Oliveira>
  </footer>
 </div>
 </div>
+</div>
+<script>
+setInterval(() =>{
+  let hours = document.getElementById('hours');
+let minutes= document.getElementById('minutes');
+let seconds = document.getElementById('seconds');
+let ampm = document.getElementById('ampm');
+
+let h = new Date().getHours();
+let m = new Date().getMinutes();
+let s = new Date().getSeconds();
+let am = h >= 12 ? "PM" : "AM";
+
+if (h>12){
+  h = h -12;
+}
+h = (h < 10) ? "0" + h : h;
+m = (m < 10) ? "0" + m : m;
+s = (s < 10) ? "0" + s : s;
+
+hours.innerHTML = h;
+minutes.innerHTML = m;
+seconds.innerHTML = s;
+ampm.innerHTML = am;
+
+})
+
+
+
+</script>
 </body>
 </html>
+
