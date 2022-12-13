@@ -16,7 +16,7 @@ font-family: 'Poppins', sans-serif;
 {
   display: flex;
   gap: 25px;
-  color: rgb(235, 238, 240);
+  color: #f90;
   margin-left: 55px;
   margin-right: 49px;
   padding: auto;
@@ -24,7 +24,7 @@ font-family: 'Poppins', sans-serif;
   
 }
 #time .circle{
-  background-color: rgb(3, 15, 15);
+  background-color: rgb(64, 80, 80);
   border-color: black;
   border-radius: 55%;
 }
