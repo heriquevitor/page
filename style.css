@@ -99,7 +99,7 @@ footer{
   100% {background-position: 320px 320px;}
 }
 .tudo{
-  background: url('/img/montain.gif');
+  background: url(https://raw.githubusercontent.com/heriquevitor/page/main/img/montain.gif);
   background-repeat: no-repeat;
   background-size:cover;
 }
